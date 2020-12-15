@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <a href="#"><img src="images/logo.svg" alt="logo"></a>
+      <button class="header__menu-btn">
+        <img class="menu-btn-icon" src="images/icon-hamburger.svg" alt="menu button">
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item"><a class="header__nav-link t-nav-link" href="#">Product</a></li>
+          <li class="header__nav-item"><a class="header__nav-link t-nav-link" href="#">Features</a></li>
+          <li class="header__nav-item"><a class="header__nav-link t-nav-link" href="#">Pricing</a></li>
+          <li class="header__nav-item header__nav-item--divider"></li>
+          <li class="header__nav-item"><a class="header__nav-link t-nav-link" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__img">
+          <img class="animate__animated animate__fadeInRight" src="images/illustration-devices.svg" alt="hero">
+        </div>
+        <div class="hero__content animate__animated animate__fadeInLeft">
+          <div class="hero__details">
+            <span class="t-tag hero__tag">New</span>
+            <h2 class="t-h2">Monograph Dashboard</h2>
+          </div>
+          <h1 class="t-h1 hero__heading">
+            Powerful insights into your team
+          </h1>
+          <p class="t-body hero__text">
+            Project planning and time tracking for agile teams
+          </p>
+          <div class="hero__cta">
+            <a class="btn hero__btn" href="#">Schedule a demo</a>
+            <h2 class="t-h2">to see a preview</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

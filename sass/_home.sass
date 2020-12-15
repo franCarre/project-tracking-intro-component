@@ -1,0 +1,57 @@
+.hero
+  display: flex
+  flex-direction: column
+  @media (min-width: 768px)
+    flex-direction: row
+
+  &__img
+    margin-left: -3rem
+    @media (min-width: 768px)
+      order: 2
+      margin-left: 0
+      padding: 8rem 0 0 3.5rem
+    & img
+      width: 150vw
+      max-width: 120rem
+      @media (min-width: 768px)
+        width: initial
+        max-width: initial  
+
+  &__content
+    display: flex
+    flex: 1 0 50%
+    flex-direction: column
+    padding-top: 10rem
+    margin-bottom: 3rem
+    @media (min-width: 768px)
+      padding-top: 12rem
+
+  &__details
+    display: flex
+    align-items: center
+    margin-bottom: 1.5rem
+    @media (min-width: 768px)
+      margin-bottom: 2rem
+
+  &__tag
+    margin-right: 2rem
+
+  &__heading
+    margin-bottom: 2rem
+    @media (min-width: 768px)
+      margin-bottom: 2.7rem
+
+  &__text
+    margin-bottom: 3rem
+    max-width: 28rem
+    @media (min-width: 768px)
+      margin-bottom: 5rem
+
+  &__cta
+    display: flex
+    align-items: center
+    
+  &__btn
+    margin-right: 2rem
+
+

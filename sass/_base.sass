@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap')
+
+// Colors
+$col-very-dark-blue: #242942
+$col-dark-grayish-blue: #5B5F71
+$col-grayish-blue: #A0A1AC
+$col-light-grayish-blue: #EEF3F6
+$col-white: #FFFFFF
+$col-red: #FF5C5C
+
+// Font family
+$font-heading: 'Barlow Condensed', sans-serif
+$font-body: 'Barlow', sans-serif
+
+// Font weights
+$regular: 400
+$bold: 700
+
+// Spacing
+$space-max-width: 120rem
+
+// Design elements
+$transition: 300ms ease-in-out
+
+// Reset
+html
+  box-sizing: border-box
+  font-size: 62.5%
+  overflow-x: hidden
+
+*, *::before, *::after
+  box-sizing: inherit
+
+body
+  background-color: $col-white
+  font-family: $font-body
+  font-size: 1.8rem
+  position: relative
+  margin: 0
+  overflow-x: hidden
+  &::before
+    content: ''
+    background-color: $col-light-grayish-blue
+    border-bottom-left-radius: 7rem
+    position: absolute
+    right: 0
+    top: 0
+    height: 57rem
+    width: 49%
+    z-index: -1
+    @media (min-width: 768px)
+      height: 43rem
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+h1, h2, h3, h4, p
+  margin: 0
+
+a
+  text-decoration: none
+
+button
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+
+img
+  background-repeat: no-repeat
+
+// Typography
+
+.t-h1
+  color: $col-very-dark-blue
+  font-family: $font-heading
+  font-size: 4rem
+  text-transform: uppercase
+  letter-spacing: 0px
+  line-height: 1
+  max-width: 40rem
+  @media (min-width: 450px)
+    font-size: 5rem
+  @media (min-width: 576px)
+    font-size: 6.4rem
+    max-width: 48rem
+  
+.t-h2
+  color: $col-grayish-blue
+  font-family: $font-heading
+  font-size: 1.4rem
+  font-weight: $regular
+  text-transform: uppercase
+  letter-spacing: 0.5rem
+
+.t-body
+  color: $col-dark-grayish-blue
+  line-height: 1.44
+  font-size: 1.8rem
+
+.t-nav-link
+  color: $col-very-dark-blue
+  font-family: $font-heading
+  font-size: 2rem
+  font-weight: $bold
+  letter-spacing: 1.2px
+  text-transform: uppercase
+  position: relative
+  @media (min-width: 768px)
+    font-size: 1.8rem
+  &::before
+    content: ''
+    background-color: $col-very-dark-blue
+    bottom: 0
+    left: 0
+    transform: scaleX(0)
+    transition: $transition
+    position: absolute
+    height: 0.1rem
+    width: 100%
+    visibility: hidden
+  &:hover::before
+    display: block
+    transform: scaleX(1)
+    visibility: visible
+    
+    
+
+.t-tag
+  background-color: $col-very-dark-blue
+  border-radius: 1.25rem
+  color: $col-white
+  font-family: $font-heading
+  font-size: 1.4rem
+  font-weight: $bold
+  letter-spacing: 1px
+  padding: 0.3rem 1.5rem
+  text-transform: uppercase
+
+
